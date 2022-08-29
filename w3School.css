@@ -1,14 +1,37 @@
 p {
-    border: 2px solid powderblue;
-    padding: 30px;
-    margin: 5px;
+  border: 2px solid powderblue;
+  padding: 30px;
+  margin: 5px;
 }
 
-table,td,th {
+table,
+td,
+th {
+  border: 1px solid black;
+  padding: 30px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: 25%;
+}
+
+.city {
+  background-color: magenta;
+  border: 1px solid black;
+  width: 50%;
+  padding: 15px;
+  margin: 15px;
+  margin-left: 25%;
+}
+
+.main {
+  text-align: center;
+}
+
+#header{
     border: 1px solid black;
-    padding: 30px;
+    background-color: brown;
     text-align: center;
-    border-collapse: collapse;
+    padding: 30px;
+    width: 50%;
     margin-left: 25%;
 }
-
