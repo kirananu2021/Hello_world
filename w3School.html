@@ -8,6 +8,34 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="w3School.css" />
   </head>
+  <style>
+    .flex{
+      display: flex;
+    }
+    .w-50{
+      width: 50%;
+    }
+    .w-100{
+      width:100%;
+    }
+    .grid{
+      display: grid;
+     
+    }
+    .grid-repeat-2{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-repeat-3{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-item{
+        border: 1px solid grey;
+        padding: 10px;
+    }
+    .gap-4{
+        gap:20px;
+    }
+  </style>
   <body>
     <h1 style="text-align: center">Marks sheet for the semester</h1>
     <hr />
@@ -69,7 +97,7 @@
     <p style="font-size: 80px">my first emoji &#128525;</p>
     <form class="form" action="./Kiran.html" target="_blank" autocomplete="on">
       <label for="username">Username</label>
-      <input type="text" id="username" name="username">
+      <input type="text" id="username" name="username" />
     </form>
     <iframe
       src="./iFrame.html"
@@ -79,7 +107,82 @@
       name="iframe_A"
     ></iframe>
     <p><a href="https://www.google.co.in/" target="iframe_A">W3 Schools</a></p>
-    <canvas id="myCanvas" width="200" height="200" style="border: 1px solid red;"></canvas>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="200"
+      style="border: 1px solid red"
+    ></canvas>
+    <div class="margin">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quis,
+      exercitationem itaque fugit porro mollitia labore repudiandae accusantium
+      nihil blanditiis culpa at. Corporis aspernatur perspiciatis cumque iusto
+      laudantium sint aliquid.
+    </div>
+
+    <div class="flex w-100">
+        <div class="w-50">
+            Kiran
+        </div>
+        <div class="w-50">
+              Anushya
+        </div>
+    </div>
+
+    <div class="grid gap-4 grid-repeat-2">
+      <div class="grid-item">
+          Kiran
+      </div>
+      <div class="grid-item">
+            Anushya
+      </div>
+      <div class="grid-item">
+        Siddanth
+      </div>
+      <div class="grid-item">
+        Niharika
+      </div>
+      <div class="grid-item">
+        Kiran
+    </div>
+    <div class="grid-item">
+          Anushya
+    </div>
+    <div class="grid-item">
+      Siddanth
+    </div>
+    <div class="grid-item">
+      Niharika
+    </div>
+    
+  </div>
+  <div class="grid gap-4 grid-repeat-3">
+    <div class="grid-item">
+        Kiran
+    </div>
+    <div class="grid-item">
+          Anushya
+    </div>
+    <div class="grid-item">
+      Siddanth
+    </div>
+    <div class="grid-item">
+      Niharika
+    </div>
+    <div class="grid-item">
+      Kiran
+  </div>
+  <div class="grid-item">
+        Anushya
+  </div>
+  <div class="grid-item">
+    Siddanth
+  </div>
+  <div class="grid-item">
+    Niharika
+  </div>
+  
+</div>
   </body>
   <script>
     function display() {
