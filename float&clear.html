@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float&clear</title>
+  </head>
+  <style>
+    .div1 {
+      border: 3px solid red;
+      float: left;
+      padding: 10px;
+    }
+    .div2 {
+      border: 3px solid red;
+      padding: 10px;
+    }
+    .div3 {
+      border: 3px solid magenta;
+      float: left;
+      padding: 10px;
+    }
+    .div4 {
+      border: 3px solid aquamarine;
+      clear: left;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <h2>Without Clear</h2>
+    <div class="div1">div1</div>
+    <div class="div2">
+      div2--I am noticing that div2 comes after div1 in the HTML code.
+      however,div1 floats to left of div1
+    </div>
+    <br /><br />
+    <div class="div3">div3</div>
+    <div class="div4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, minima
+      unde vel inventore rem mollitia in alias impedit quod sed nobis obcaecati
+      velit maxime aperiam sint ab modi soluta commodi?
+    </div>
+  </body>
+</html>
