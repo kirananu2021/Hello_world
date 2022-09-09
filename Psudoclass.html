@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoClasses</title>
+    <style>
+      a:link {
+        color: magenta;
+      }
+      a:hover {
+        color: red;
+      }
+      a:visited {
+        color: black;
+      }
+      .highlight:hover {
+        color: blue;
+        font-size: larger;
+      }
+      p {
+        display: none;
+      }
+      .highlight:hover p {
+        display: block;
+        background-color: blueviolet;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="default.html">its a link touch me</a>
+    <button class="highlight">Touch me</button>
+    <p class="display">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea
+      quibusdam nemo animi, dolores, error voluptate quisquam enim id
+      aspernatur, earum eos laudantium placeat similique fugit labore hic nisi
+      rem.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooltip</title>
+    <style>
+      p {
+        display: none;
+        background-color: blueviolet;
+        padding: 20px;
+        text-align: center;
+      }
+      div:hover p {
+        display: block;
+      }
+      button:hover p {
+        display: block;
+      }
+      p:first-letter {
+        font-size: xx-large;
+        color: aqua;
+      }
+      p:first-line {
+        color: red;
+      }
+      p::selection{
+        color: yellow;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Hover over me to show the tool tip of an p element
+      <p>Hey!!!! I am here</p>
+    </div>
+    <button>
+      CLick ME!!!
+      <p>
+        Hey I am here Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Ea quod quasi, error asperiores exercitationem autem culpa unde sapiente
+        tempore dolores placeat. Quo, provident. Assumenda recusandae saepe enim
+        expedita ex minima.
+      </p>
+      <span>Hi this is Kiran</span>
+    </button>
+  </body>
+</html>
