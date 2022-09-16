@@ -4,43 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dropdown</title>
+    <title>Document</title>
   </head>
   <style>
-    .container { 
-      position: relative;
-      display: inline-block;
+    .btn-content{
+        border-radius: 5px;
+        padding: 12px 20px;
+        background-color: blue;
+        opacity: 0.8;
+        color: white;
+        cursor: pointer;
     }
-    .item {
-      color: white;
-      padding: 5%;
-      width: 200px;
-      height: 50px;
-      background-color: blue;
-      opacity: 0.5;
-      text-align: center;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .dropdown a {
-       color: black;
-       padding: 12px 16px;
-       text-decoration: none;
-       display: block;
-    }
-    .dropdown a :hover {background-color: #f1f1f1;}
-
-    .dropdown{
+    .nav-bars a {
+        text-decoration: none;
         display: none;
+        padding: 12px 16px;
+        background-color: #4CAF50;
+        width: 60px;
+        text-align: center;  
+        color: black;
+    }
+    .container:hover .nav-bars a {
+        display: block;
     }
   </style>
   <body>
     <div class="container">
-      <div class="item">DropDown</div>
-      <div class="dropdown">
-        <a href="Link1">Link1</a>
-        <a href="Link2">Link2</a>
-        <a href="Link3">Link3</a>
+      <button class="btn-content">Dropdown</button>
+      <div class="nav-bars">
+        <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <a href="#">Link3</a>
       </div>
     </div>
   </body>
