@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Layout</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+    .navigationbars {
+      background-color: gray;
+      margin: 10px 0px;
+      padding: 10px;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+    }
+    li a {
+      color: white;
+      text-decoration: none;
+    }
+    li {
+      display: inline;
+      margin: 10px;
+      padding: 10px;
+    }
+    .btn-content {
+      background: none;
+      color: white;
+      border: none;
+      padding: 10;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
+    .dropdowns {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h1>Header design</h1>
+    </div>
+    <div class="navigationbars">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Contactus">Contact</a></li>
+        <button class="btn-content">Lists</button>
+        <div class="dropdowns">
+          <a href="List1">List1</a>
+          <a href="List2">List2</a>
+          <a href="List3">List3</a>
+        </div>
+      </ul>
+    </div>
+  </body>
 </html>
